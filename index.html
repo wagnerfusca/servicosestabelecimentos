@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Serviços e Estabelecimentos</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="loader.css">
+	<meta name="description" content="" />
+    <meta name="keywords" content="">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="#">Serviços e Estabelecimentos</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse mr-auto" id="navbarCollapse">
+				<ul class="navbar-nav flex-xs-column ml-md-auto align-items-xs-center">
+					<li class="nav-item">
+						<a class="" href="https://forms.gle/E28wBcaMkK8nNC4K8" target="blank">
+							<button type="button" class="btn btn-outline-light btn-lg">Cadastre aqui o seu estabelecimento ou serviço!</button>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="col-sm-12">
+		<div id="alert" class="mt-2 float-right"></div>
+		<div class="container-fluid"> 
+			<div class="row">
+				<div id="filter" class="btn-group btn-group-sm" role="group" style="display: inline; padding:15px;margin-bottom: 1rem;"></div>
+			</div>
+			<div class="row">
+				<div id="notice"></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-12">
+		<aside class="col-sm-3 float-left mb-4 d-sm-block" id="collapseAside" style="display: none;">
+			<div class="card">
+				<article class="card-group-item">
+					<header class="card-header"><h6 class="title">Categorias</h6></header>
+					<div class="filter-content">
+						<div id="category-list" class="list-group list-group-flush">
+						</div>
+					</div>
+				</article>
+			</div>
+		</aside>
+
+	    <div id="container" class="float-left col-sm-9">
+			<div class="row">
+				<div class="col-xs-12 col-sm-offset-2 col-sm-12">
+					<ul id="event-list" class="event-list"></ul>
+				</div>
+
+				<footer class="footer text-center col-sm-12">
+					<a href="https://medium.com/p/c2eab3fb0b2b">Inspirado neste post</a>
+					<br/>
+					Este trabalho está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons - Atribuição-NãoComercial 4.0 Internacional</a>.
+					<a class="" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+						<img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png">
+				</a>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', app.init);
+	</script>
+<div class="loading" style="display: none"></div>
+</body>
+</html>
